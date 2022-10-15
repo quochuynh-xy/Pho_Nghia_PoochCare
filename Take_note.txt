@@ -1,0 +1,3 @@
+Bài sử dụng bootstrap v5.2.2
+CSS trong main.CSS là dùng chung
+file main.css dùng để ghi những class dùng chung cho nhiều trang.

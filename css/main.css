@@ -32,10 +32,10 @@ body {
   text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
-  color: var(--secondary);
+  color: #f53626;
 }
 /* HEADER */
-header {
+.header {
   align-items: center;
   padding: 16px 0 15px 0;
   background-color: #fff;

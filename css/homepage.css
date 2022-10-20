@@ -568,3 +568,21 @@ body {
   border-color: #189a46;
   box-shadow: none;
 }
+/* responsive */
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+.subs .btn--green {
+  width: 100%;
+  margin-top: 1rem;
+}
+.subs .container.row {
+  justify-content: space-around;
+}
+}
+

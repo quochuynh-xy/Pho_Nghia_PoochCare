@@ -139,7 +139,30 @@ body {
 .dropdown-item:hover::after {
   width: 100px;
 }
-
+/* collapse icon change*/
+.navbar .navbar-toggler {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  background-color: #189a46;
+  color: #fff;
+  padding: 0;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler.collapsed .fa-bars{
+  display: inline;
+}
+.navbar-toggler .fa-bars {
+  display: none;
+}
+.navbar-toggler.collapsed .fa-xmark {
+  display: none;
+}
+.navbar-toggler .fa-xmark {
+  display: inline;
+}
 /* COMPLETED HEADER */
 
 /* FOOTER */

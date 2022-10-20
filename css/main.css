@@ -241,6 +241,7 @@ body {
 }
 #switchTheme .fa-moon {
   display: block;
+  transform: scale(1.5) rotateZ(350deg);
 }
 .theme-dark .header {
   background-color: #151515;
@@ -253,6 +254,8 @@ body {
 .theme-dark #switchTheme .fa-sun {
   display: block;
   color: #fff;
+  transform: scale(1.2) rotateZ(335deg);
+
 }
 .theme-dark #switchTheme .fa-moon {
   display: none;
@@ -265,8 +268,12 @@ body {
 /* Header */
 #switchTheme {
   position: absolute;
-  right: 10vw;
-  top: 1.5vh;
+  right: 65px;
+  top: 15px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  transform: translateX(0);
+  text-align: center;
 }
 }
 @media screen and (max-width: 768px) {

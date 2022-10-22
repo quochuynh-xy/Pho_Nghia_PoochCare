@@ -28,11 +28,6 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <!-- Light box CSS -->
-    <link
-      rel="stylesheet"
-      href="./css/lightbox.css"
-    />
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- page CSS -->
@@ -122,33 +117,57 @@
         </header>
         <main class="gallery__main mt-lg-5 mt-4">
           <div class="row">
-            <a class="col-md-4 mb-4" href="./img/g1.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g1.jpg" alt="first dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g3.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g3.jpg" alt="2nd dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g5.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g5.jpg" alt="3rd dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g2.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g2.jpg" alt="4th dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g4.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g4.jpg" alt="5th dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g6.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g6.jpg" alt="6th dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g7.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g7.jpg" alt="7th dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g8.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g8.jpg" alt="8th dog" />
-            </a>
-            <a class="col-md-4 mb-4" href="./img/g9.jpg" data-title="Here is a cute and lovely puppy" data-lightbox = "dog-img">
-              <img class="img-fluid" src="./img/g9.jpg" alt="9th dog" />
-            </a>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="#"
+                type="button"
+                class="gallery-item"
+                data-bs-toggle="modal"
+                data-bs-target="#item1--modal"
+              >
+                <img class="img-fluid" src="./img/g1.jpg" alt="first dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g3.jpg" alt="2nd dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g5.jpg" alt="3rd dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g2.jpg" alt="4th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g4.jpg" alt="5th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g6.jpg" alt="6th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g7.jpg" alt="7th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g8.jpg" alt="8th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/g9.jpg" alt="9th dog" />
+              </a>
+            </figure>
           </div>
         </main>
       </div>
@@ -206,15 +225,44 @@
         </p>
       </div>
     </footer>
+    <!-- Gallery Modal -->
 
+    <!-- Modal item 1-->
+    <div
+      class="modal fade"
+      id="item1--modal"
+      tabindex="-1"
+      aria-labelledby="item1--modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="img-fluid" src="./img/g1.jpg" alt="" />
+          </div>
+          <div class="modal-body d-flex justify-content-between">
+            <div class="modal-text">
+              <p>A cute puppy is here!</p>
+              <h4>Image 1 of 9</h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- BOOSTRAP JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <!-- LIGHT BOX JS -->
-    <script src="./js/lightbox-plus-jquery.js"></script>
-
+    <!-- Light box -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/lightgallery.umd.min.js"></script>
   </body>
 </html>
+

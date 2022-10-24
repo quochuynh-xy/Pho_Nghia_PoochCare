@@ -426,6 +426,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  animation-name: glowingButton;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-duration: 0.5s;
+}
+.petcare__main .petcare-modal:hover {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 #petCare {
   background-color: #000c04cb;
@@ -568,21 +579,32 @@ body {
   border-color: #189a46;
   box-shadow: none;
 }
+@keyframes glowingButton {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164),
+      0 0 0 10px rgba(15, 162, 67, 0.25),
+      0 0 0 20px rgba(15, 162, 67, 0.25);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25),
+      0 0 0 20px rgba(15, 162, 67, 0.25),
+      0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
 /* responsive */
 @media screen and (max-width: 1200px) {
-
 }
 @media screen and (max-width: 992px) {
 }
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 576px) {
-.subs .btn--green {
-  width: 100%;
-  margin-top: 1rem;
+  .subs .btn--green {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .subs .container.row {
+    justify-content: space-around;
+  }
 }
-.subs .container.row {
-  justify-content: space-around;
-}
-}
-

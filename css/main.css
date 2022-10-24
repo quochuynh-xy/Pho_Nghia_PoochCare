@@ -26,6 +26,9 @@ body {
   line-height: 48px;
   text-transform: capitalize;
 }
+.theme-dark .title-L {
+  color: #ddd;
+}
 .sub-title {
   font-size: 18px;
   font-weight: 400;
@@ -230,6 +233,14 @@ body {
   color: #f53626;
   text-decoration: none;
   opacity: 0.9;
+}
+.theme-dark .footer .container a,
+.theme-dark .footer .container p,
+.theme-dark .footer .container b {
+  color: #afafaf;
+}
+.theme-dark .footer .container a:hover {
+  color: #fff;
 }
 /* DARK and LIGHT button */
 /* Change Theme */

@@ -24,3 +24,17 @@ function backToTopFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// header change size when scoll down
+let headerSize = document.getElementById("mainHeader");
+window.onscroll = function() {
+  changeNavbarSize()
+}
+function changeNavbarSize () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    headerSize.style.padding = "10px 0 9px 0"
+    headerSize.style.boxShadow = "0 1px 4px 0 #696969"
+  } else {
+    headerSize.style.padding = "16px 0 15px 0"
+    headerSize.style.boxShadow = "none"
+  }
+}

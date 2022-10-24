@@ -11,6 +11,8 @@ let backToTop = document.getElementById("backToTopBtn");
 // When the user scrolls down 40px from the top of the document, show the button
 window.onscroll = function () {
   showBackToTopBtn();
+  changeNavbarSize();
+
 };
 function showBackToTopBtn() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -26,9 +28,9 @@ function backToTopFunction() {
 }
 // header change size when scoll down
 let headerSize = document.getElementById("mainHeader");
-window.onscroll = function() {
-  changeNavbarSize()
-}
+// window.onscroll = function() {
+//   changeNavbarSize()
+// }
 function changeNavbarSize () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     headerSize.style.padding = "10px 0 9px 0"

@@ -50,7 +50,7 @@
     color: #189a46;
   }
   /* Gallery item */
-.gallery__main img {
+.gallery__main a img {
     border-radius: 10px;
 }
 .gallery .container {
@@ -61,6 +61,23 @@
   background-color: #151515;
 }
 /* hover effect */
+.gallery__main .row a{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.gallery__main .row a::before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ffffff00 0%, #ffffff4d 100%);
+  transform: skewX(-22deg) translateX(-150%);
+}
+.gallery__main .row a:hover::before {
+  transform: skewX(-22deg) translateX(250%);
+  transition-duration: 1s;
+}
 /* Light box CSS */
 .lg-backdrop {
   background-color: rgba(0, 0, 0, 0.603);

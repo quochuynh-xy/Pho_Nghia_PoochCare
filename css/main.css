@@ -271,6 +271,27 @@ body {
 .theme-dark #switchTheme .fa-moon {
   display: none;
 }
+/* Back to top btn */
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  color: #fff;
+  background-color: #189a46;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  bottom: 90px;
+  right: 16px;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  transition-duration: 0.5s;
+  opacity: 0.9;
+}
+.back-to-top-btn:hover {
+  transform: translateY(-10px);
+  opacity: 1;
+}
 /* responsive */
 @media screen and (max-width: 1200px) {
 

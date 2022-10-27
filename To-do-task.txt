@@ -1,1 +1,2 @@
-Pho: home - services - gallery
+Pho: home - services - gallery - header + footer
+Nghia: blog post - blog single - About

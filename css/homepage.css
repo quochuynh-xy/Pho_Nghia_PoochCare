@@ -133,7 +133,7 @@ body {
 /* About */
 .about .container {
   max-width: 700px;
-  padding: 0;
+  padding: 3rem 0;
 }
 .about__main p {
   color: #696969;

@@ -28,6 +28,17 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- page CSS -->
@@ -100,87 +111,50 @@
     </header>
     <!-- Carousel -->
     <section class="myCarousel">
-      <div
-        id="introCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-touch="true"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#introCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#introCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#introCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#introCarousel"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
+      <div class="carousel-item">
+        <div class="item-details carousel-item1 d-flex align-items-center">
+          <div class="container">
+            <div class="text">
+              <h5 class="text-capitalize">Quality Things For loving Pet</h5>
+              <p class="text-capitalize">Keeps your pet smiling</p>
+              <button class="btn-white">Read More</button>
+              <button class="btn-trans">Contact Us</button>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3500">
-            <img src="./img/banner1.jpg" class="d-block w-100" alt="pug" />
-            <div class="container carousel-caption d-md-block">
-              <div class="caption-info">
-                <h5 class="text-capitalize">Quality Things For loving Pet</h5>
-                <p class="text-capitalize">Keeps your pet smiling</p>
-                <button class="btn-white">Read More</button>
-                <button class="btn-trans">Contact Us</button>
-              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="item-details carousel-item2 d-flex align-items-center">
+          <div class="container">
+            <div class="text ms-auto">
+              <h5 class="text-capitalize">Quality Things For loving Pet</h5>
+              <p class="text-capitalize">Keeps your pet smiling</p>
+              <button class="btn-white">Read More</button>
+              <button class="btn-trans">Contact Us</button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img
-              src="./img/banner2.jpg"
-              class="d-block w-100"
-              alt="dog and person"
-            />
-            <div class="container carousel-caption d-md-block">
-              <div class="caption-info caption-info--right">
-                <h5 class="text-capitalize">Delivering happiness for Pets</h5>
-                <p class="text-capitalize">For the love of pets</p>
-                <button class="btn-white">Read More</button>
-                <button class="btn-trans">Contact Us</button>
-              </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="item-details carousel-item3 d-flex align-items-center">
+          <div class="container">
+            <div class="text">
+              <h5 class="text-capitalize">Quality Things For loving Pet</h5>
+              <p class="text-capitalize">Keeps your pet smiling</p>
+              <button class="btn-white">Read More</button>
+              <button class="btn-trans">Contact Us</button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="./img/banner3.jpg" class="d-block w-100" alt="dog lays" />
-            <div class="container carousel-caption d-md-block">
-              <div class="caption-info">
-                <h5 class="text-capitalize">Quality Things for Loving Pets</h5>
-                <p class="text-capitalize">Keeps your Pet Smiling</p>
-                <button class="btn-white">Read More</button>
-                <button class="btn-trans">Contact Us</button>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="./img/banner4.jpg" class="d-block w-100" alt="dog runs" />
-            <div class="container carousel-caption d-md-block">
-              <div class="caption-info caption-info--right">
-                <h5 class="text-capitalize">Delivering happiness for Pets</h5>
-                <p class="text-capitalize">We help your Projects</p>
-                <button class="btn-white">Read More</button>
-                <button class="btn-trans">Contact Us</button>
-              </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="item-details carousel-item4 d-flex align-items-center">
+          <div class="container ms-auto">
+            <div class="text">
+              <h5 class="text-capitalize">Quality Things For loving Pet</h5>
+              <p class="text-capitalize">Keeps your pet smiling</p>
+              <button class="btn-white">Read More</button>
+              <button class="btn-trans">Contact Us</button>
             </div>
           </div>
         </div>
@@ -914,7 +888,13 @@
     </footer>
     <!-- Back to top btn -->
     <section>
-      <button onclick="backToTopFunction()" id="backToTopBtn" class="back-to-top-btn">⤴</button>
+      <button
+        onclick="backToTopFunction()"
+        id="backToTopBtn"
+        class="back-to-top-btn"
+      >
+        ⤴
+      </button>
     </section>
     <!-- Petcare Modal -->
     <div
@@ -948,6 +928,32 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery 3.6.0 -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(".myCarousel").slick({
+        dots: true,
+        // autoplay:true,
+        // autoplaySpeed: 3000,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+      });
+    </script>
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
   </body>
 </html>

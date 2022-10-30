@@ -28,6 +28,17 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- page CSS -->
@@ -312,14 +323,12 @@
     </section>
     <!-- Team -->
     <section class="team">
-      <header class="team__header text-center ">
+      <header class="team__header text-center">
         <h3 class="sub-title my-0">OUR EXPERTS</h3>
         <h2 class="title-L my-0">Our Team</h2>
       </header>
       <main class="team__main row">
-        <div class="main__member col-lg-">
-          
-        </div>
+        <div class="main__member col-lg-"></div>
       </main>
     </section>
     <!-- Number -->
@@ -1005,6 +1014,31 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery 3.6.0 -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(".myCarousel").slick({
+        dots: true,
+        // autoplay:true,
+        // autoplaySpeed: 3000,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+      });
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>

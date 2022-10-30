@@ -1,6 +1,9 @@
 body {
   line-height: 1.5;
 }
+.container {
+  max-width: 90%;
+}
 .header {
   /* position: fixed; */
   /* top: 40px; */
@@ -705,8 +708,21 @@ body {
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 992px) {
+  /* Carousel */
+  .myCarousel .item-details .container .text {
+    margin: 0 auto;
+  } 
+  .myCarousel .item-details h5 {
+    font-size: 50px;
+  }
+  /* Services */
+  /* Pet care */
+  .petcare .container {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 768px) {
+
 }
 @media screen and (max-width: 576px) {
   .subs .btn--green {

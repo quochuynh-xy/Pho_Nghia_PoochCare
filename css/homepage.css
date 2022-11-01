@@ -775,6 +775,10 @@ body {
   .legit__img {
     margin-bottom: 1rem;
     padding-left: 0;
+    text-align: center;
+  }
+  .legit__img img {
+    width: 60%;
   }
   .legit__content header {
     text-align: center;

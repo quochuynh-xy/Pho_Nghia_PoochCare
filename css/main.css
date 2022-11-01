@@ -299,7 +299,10 @@ body {
 }
 /* responsive */
 @media screen and (max-width: 1200px) {
-
+.title-L {
+  font-size: 35px;
+  line-height: 40px;
+}
 }
 @media screen and (max-width: 992px) {
 /* Header */

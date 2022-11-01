@@ -706,6 +706,14 @@ body {
 }
 /* responsive */
 @media screen and (max-width: 1200px) {
+  .myCarousel .item-details h5 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .btn-trans,
+  .btn-white {
+    margin-top: 1.5rem;
+  }
 }
 @media screen and (max-width: 992px) {
   /* Carousel */
@@ -718,6 +726,10 @@ body {
   /* Services */
   /* Pet care */
   .petcare .container {
+    width: 80%;
+  }
+  /* Sub */
+  .subs .subs__main {
     width: 80%;
   }
 }

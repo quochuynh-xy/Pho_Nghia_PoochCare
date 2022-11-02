@@ -57,6 +57,17 @@
   background-color: #189a46;
   color: #fff;
 }
+.theme-dark .team {
+  background-color: #222222;
+}
+.theme-dark .team h4,
+.theme-dark .team p {
+  color: #ddd;
+}
+.team p {
+  opacity: 0.6;
+}
+
 /* Contact */
 .contact {
   padding: 48px 0;
@@ -67,6 +78,7 @@
 }
 .contact__main {
   padding: 0 25px 24px;
+  justify-content: space-around;
 }
 .contact__main textarea {
   resize: none;
@@ -143,7 +155,12 @@ color: #777;
   
 }
 @media screen and (max-width:768px) {
-  
+  .team .team__header {
+    margin-bottom: 2rem;
+  }
+  .team .main__member {
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width:576px) {
   .contact .container{

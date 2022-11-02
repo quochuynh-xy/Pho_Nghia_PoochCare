@@ -80,8 +80,24 @@
   color: #189a46;
 }
 @media screen and (max-width: 1200px) {
+  .services  {
+    padding: 3rem 35px;
+  }
 }
 @media screen and (max-width: 992px) {
+  .services.container {
+    max-width: 720px;
+  }
+  .services .row--reverse {
+    flex-direction: column-reverse;
+  }
+  .services__item {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .services__item img {
+    margin-bottom: 24px;
+  }
 }
 @media screen and (max-width: 768px) {
 }

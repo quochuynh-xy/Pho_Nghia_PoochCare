@@ -1,3 +1,6 @@
+.gallery .container {
+  max-width: 80%;
+}
 .pageTitle {
     background-image: url(../img/g4.jpg);
     background-position: center;
@@ -81,4 +84,12 @@
 /* Light box CSS */
 .lg-backdrop {
   background-color: rgba(0, 0, 0, 0.603);
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
 }

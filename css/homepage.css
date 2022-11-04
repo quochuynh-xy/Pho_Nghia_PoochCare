@@ -131,6 +131,9 @@ body {
   background-color: #fff;
   color: #189a46;
 }
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 /* About */
 .about .container {
   max-width: 700px;

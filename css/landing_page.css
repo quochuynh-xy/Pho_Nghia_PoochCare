@@ -148,6 +148,18 @@
 .theme-dark .contact__main .right-collum p {
 color: #777;
 }
+/* HEADER NAVIGATION SECTION */
+#section__about,
+#section__services,
+#section__plan,
+#section__team,
+#section__stats,
+#section__video,
+#section__testimoni,
+#section__contact {
+  position: relative;
+  top: -10vh;
+}
 @media screen and (max-width:1200px) {
   
 }

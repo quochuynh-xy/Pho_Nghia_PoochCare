@@ -28,60 +28,562 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <!-- page CSS -->
-    <link rel="stylesheet" href="./css/homepage.css" />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- blog single CSS -->
+    <link rel="stylesheet" href="./css/blog_single.css" />
   </head>
-  <body>
+
+  <body id="changeTheme">
     <!-- Heading -->
-    <header class="header">
-      <div class="container">
-        <h1 class="header__logo"><a href="#">Pooch Care</a></h1>
-        <nav class="header__navbar">
-          <ul class="navbar__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li>
-              <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-            </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="navbar__item">
-            <button class="navbar__switch">
-              <i class="fa-regular fa-moon"></i>
-            </button>
-            <button class="navbar__toggle">
-              <i class="fa-solid fa-bars"></i>
-            </button>
+    <header class="header" id="mainHeader">
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pooch Care</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center "
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-center dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./blog_post.html"
+                      >Blog Posts</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog_single.html"
+                      >Blog single</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./landing_page.html"
+                      >Landing Page</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center"
+                  href="./landing_page.html#section__contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+          <button class="btn" id="switchTheme" title="Click to switch theme">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </nav>
     </header>
+
     <!-- Carousel -->
-    <section class="myCarousel"></section>
-    <!-- About us -->
-    <section class="about"></section>
-    <!-- Services -->
-    <section class="services"></section>
-    <!-- legit -->
-    <section class="legit"></section>
-    <!-- Number -->
-    <section class="number"></section>
-    <!-- Register -->
-    <section class="register"></section>
-    <!-- Petcare -->
-    <section class="petcare"></section>
-    <!-- Feedback -->
-    <section class="feedback"></section>
-    <!-- Sub -->
-    <section class="sub"></section>
+    <section class="myCarousel">
+      <div class="info">
+        <div class="action"></div>
+
+        <div class="name"></div>
+      </div>
+      <div class="myCarousel_content text-center">
+        <h2>Blog Posts</h2>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <span>
+              <i class="fa fa-arrow-right"></i>
+              Single Post
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Blog single -->
+    <section id="blogsingle" class="blog-single">
+      <!-- -- Blog single1-- -->
+      <section class="blog-single-1">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="title text-center">
+              <div class="item ">
+                <button>
+                  Pooch Care
+                </button>
+              </div>
+              <h3 class="hny-title">
+                It Is A Long Established Fact A Reader Be Distracted
+              </h3>
+              <ul>
+                <li>
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    May 24 2020
+                  </span>
+                </li>
+  
+                <li>
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    By admin
+                  </span>
+                </li>
+  
+                <li>
+                  <span>
+                    <i class="fa-solid fa-heart"></i>
+                    <strong>48</strong> 
+                    likes
+                  </span>
+                </li>
+  
+                <li>
+                  <span>
+                    <i class="fa-solid fa-comment"></i>
+                    <strong>12</strong> 
+                    comments
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+            <div class="content-img">
+              <img src="./img-nghia/banner4.jpg" alt="">
+            </div>
+  
+            <div class="content-text">
+              <p class="mt-3 col-12">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, hic reprehenderit eum cupiditate deleniti asperiores illum ad tenetur aliquam culpa fugit odit consequatur. Rerum illo accusantium aliquid quae adipisci fugiat sapiente delectus unde architecto. Tempore saepe maxime illo laborum obcaecati.
+              </p>   
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+                  <img src="./img-nghia/g1.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-8">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis repellendus velit nam fuga asperiores nemo commodi enim corrupti est tenetur placeat veritatis, dolores laborum illo, ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga expedita earum veritatis optio dolorum deserunt eos. Non in temporibus similique quibusdam nihil qui, consequatur, debitis ipsa aperiam dicta possimus itaque unde hic, voluptatum expedita.
+                  </p>
+                </div>
+              </div>   
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae ullam expedita. Ut explicabo minima fugit ipsum sapiente fuga et facere est autem iste ducimus totam accusamus quasi distinctio, excepturi voluptatum harum porro nostrum nemo iusto culpa expedita cupiditate omnis. Animi iusto officiis at voluptates vel laboriosam eum error voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>    
+            </div>
+            
+          
+        </div>
+      </section>
+
+      <!-- -- Blog single2-- -->
+      <section class="blog-single-2">
+        <div>
+          <div class="container">
+            <p class="text">
+              <i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos facere dolor repellendus odio. Voluptatum provident quasi necessitatibus laboriosam alias. "
+            </p>
+            <footer class="author">
+              <i class="fa-solid fa-minus"></i> Alexander smith
+            </footer>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- Blog single3-- -->
+      <section class="blog-single-3">
+        <div class="blog-child">
+          <div class="container">
+            <div class="item">
+              <div class="content">
+                <h4>
+                  It is a long established fact a reader be distracted.
+                </h4>
+                <p class="italic">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </p>
+                <p class="sub-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos facere dolor repellendus odio. Voluptatum provident quasi necessitatibus laboriosam alias dicta quis voluptate minus minima dolorum quod, quaerat modi veritatis libero! Culpa facilis enim optio veniam voluptas. Laudantium explicabo optio quam ea deleniti odio totam adipisci illo, enim quos corrupti. Animi labore natus at quas laborum. Soluta, nam molestiae.
+                </p>
+                <p class="sub-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tenetur amet. Quibusdam nemo aut ut non aliquam nam est quae aspernatur repellendus illo id earum ipsa debitis saepe maiores quasi voluptate, sunt reiciendis voluptatibus veniam pariatur? Tempore laudantium libero adipisci.
+                </p>
+                <div class="row row-g2">
+                  <div class="col-top col-12 col-md-4 col-xl-4">
+                    <img src="./img-nghia/g2.jpg" alt="">
+                  </div>
+                  <div class="col-top col-12 col-md-8 col-xl-8">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi necessitatibus error dolore dolorem, aut possimus libero saepe doloremque sequi consequatur non veritatis velit amet eligendi dolorum aspernatur sit laudantium quidem enim minima totam, ratione sunt? Quis esse laborum magnam dolorem excepturi fuga consequatur a cumque incidunt aspernatur, quod laudantium sunt assumenda labore. Adipisci deserunt animi reiciendis reprehenderit quam assumenda.
+                    </p>
+                  </div>
+                </div>
+                <div class="row row-g2 row-g3">
+                  <div class="col-top col-12 col-md-8 col-xl-8">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                  qui? Saepe necessitatibus hic, nemo eveniet tempore perspiciatis quo nisi tenetur nesciunt delectus
+                  animi aperiam dolore fugiat, minus veniam. Expedita provident qui quia voluptas doloremque sed ex
+                  possimus dolores ea, quos enim facilis autem vel asperiores beatae quidem eaque! Nihil veritatis quo,
+                  fugit eligendi magnam officia hic libero iure amet consequatur sit qui asperiores inventore
+                  temporibus!
+                    </p>
+                  </div>
+                  <div class="col-top col-12 col-md-4 col-xl-4">
+                    <img src="./img-nghia/g3.jpg" alt="">
+                  </div>
+                  
+                </div>
+                <div class="social mt-4">
+                  <ul class="social-child">
+                    <li>
+                      <h4>
+                        Share this post :
+                      </h4>
+                    </li>
+                    <li style="color: #3b5998;">
+                      <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="" style="color: #1da1f2;">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="" style="color: #c13584;">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <nav class="post-navigation row mt-5 py-4">
+
+                  <div class="prev-post col-6">
+
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fa-solid fa-angles-left"></i>
+                        Prev Post 
+                      </div>
+                      <div class="card-body row">
+                        <img src="./img-nghia/g9.jpg" class="col-xl-3 col-md-3"></img>
+                        <a href="#card-body" class="col-xl-9 col-md-9 col-12">
+                          Lorem ipsum dolor sit amet
+                        </a>
+                      </div>
+                    </div>    
+
+                  </div>
+
+                  <div class="prev-post next-post col-6">
+
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        Next Post 
+                        <i class="fa-solid fa-angles-right">
+                         
+                        </i>                      
+                      </div>
+                      <div class="card-body row">
+                        <a href="#card-body" class="col-xl-9 col-md-9 col-12">
+                          Lorem ipsum dolor sit amet
+                        </a>
+                        <img src="./img-nghia/g8.jpg" class="col-xl-3 col-md-3"></img>                       
+                      </div>
+                    </div>    
+
+                  </div>
+
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- Blog single4-- -->
+      <section class="blog-single-4">
+        <div class="comments">
+          <div class="container">
+            <div class="comments-child">
+              <h3 class="mb-4">
+                Recent Comments
+              </h3>
+
+              <div class="media row mb-4 mt-5">
+                <div class="img-cirkle col-4 col-sm-2 col-md-2 col-xl-2">
+                  <img src="./img-nghia/f1.jpg" alt="">
+                </div>
+                <div class="media-body col-8 col-sm-10 col-md-10 col-xl-10">
+                  <h5 class="mb-0">Alisa larden</h5>
+                  <span>
+                    18 minutes ago
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis rerum assumenda facere maxime accusamus cum. Numquam harum vitae id. Nemo qui fugiat nam quasi?
+                  </p>
+                  <a href="#form-child" class="reply">Reply</a>
+                  <div class="media row">
+                    <div class="img-cirkle col-4 col-sm-2 col-xl-2">
+                      <img src="./img-nghia/f2.jpg" alt="">
+                    </div>
+                    <div class="media-body col-8 col-sm-10 col-xl-10">
+                      <h5>Maxwell ker</h5>
+                  <span>
+                    4 hours ago
+                  </span>
+                  <p>
+                    In gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia felis in .
+                  </p>
+                  <a href="#form-child" class="reply">Reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="media row mt-5">
+                <div class="img-cirkle col-3 col-sm-2 col-xl-2">
+                  <img src="./img-nghia/f3.jpg" alt="">
+                 </div>
+               <div class="media-body col-9 col-sm-10 col-xl-10">
+                <h5>Tony Elisa</h5>
+                <span>
+                  16 hours ago
+                </span>
+                <p>
+                  Facere atque minus necessitatibus deserunt quibusdam voluptas quo? Omnis temporibus at, reprehenderit exercitationem dolores fuga, iste quidem earum nihil iusto repellendus. Assumenda alias illo dignissimos corrupti doloribus. Tenetur architecto rerum.
+                </p>
+                <a href="#form-child" class="reply">Reply</a>
+               </div>              
+              </div>
+
+              <div class="media row mt-5">
+                <div class="img-cirkle col-3 col-sm-2 col-xl-2">
+                  <img src="./img-nghia/f4.jpg" alt="">
+                 </div>
+               <div class="media-body col-9 col-sm-10 col-xl-10">
+                <h5>Elizabeth mark</h5>
+                <span>
+                  yesterday
+                </span>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio. Fusce condimentum nunc ac nisi vulputate fringilla. Donec felis in faucibus.
+                </p>
+                <a href="#form-child" class="reply">Reply</a>
+               </div>              
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- Blog single5-- -->
+      <section class="blog-single-5">
+        <div class="related-posts">
+          <div class="container">
+            <h3 class="mb-4">Related posts</h3>
+            <div class="row">
+
+              <div class="col-xl-6  col-lg-6  col-md-6 col-sm-12 col-diff">
+                <div class="card">
+                  <div class="card-header">
+                    <a href="./blog_single.html">
+                      <img src="./img-nghia/g3.jpg" alt="">
+                    </a>
+                  </div>
+      
+                  <div class="card-body">
+                    
+                      <a href="#url">
+                        Lorem ipsum dolor sit amet                       
+                      </a>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                      </p>
+                   <div class="author">
+                    <a href="">
+                      Johnson smith
+                    </a>
+                    -
+                      <span>
+                        May 23, 2020 
+                      </span>
+                   </div>
+                    <ul>
+                      <li>
+                        <span>
+                          <i class="fa-solid fa-comment"></i>
+                          30 comments
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          <i class="fa-solid fa-eye"></i>
+                          30 Views
+                        </span>
+                      </li>
+                    </ul>              
+                  </div>
+      
+                </div>              
+              </div>
+      
+              <div class="col-xl-6  col-lg-6  col-md-6 col-sm-12 col-diff">
+                <div class="card">
+                  <div class="card-header">
+                    <a href="./blog_single.html">
+                      <img src="./img-nghia/g4.jpg" alt="">
+                    </a>
+                  </div>
+      
+                  <div class="card-body">
+                    
+                      <a href="#url">
+                        Lorem ipsum dolor sit amet                       
+                      </a>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                      </p>
+                   <div class="author">
+                    <a href="">
+                      Johnson smith
+                    </a>
+                    -
+                      <span>
+                        May 23, 2020 
+                      </span>
+                   </div>
+                    <ul>
+                      <li>
+                        <span>
+                          <i class="fa-solid fa-comment"></i>
+                          30 comments
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          <i class="fa-solid fa-eye"></i>
+                          30 Views
+                        </span>
+                      </li>
+                    </ul>              
+                  </div>
+      
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- Blog single6-- -->
+      <section class="blog-single-6">
+        <div class="form">
+          <div class="container">
+            <h3 class="mb-4">Leave a reply</h3>
+
+            <form class="form-child" action="">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-xl-6 col-left col-hover">
+                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Your Name*">
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-6 col-right col-hover">
+                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Email Address*">
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-6 col-left col-hover">
+                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Subject">
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-6 col-right col-hover">
+                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Phone">
+                </div>
+
+              </div>
+              <div class="col-12 col-hover">
+                <input type="text" class="contact mb-0" style="width: 100%;" placeholder="Your Message*">
+                <!-- <label for="contact"></label> -->
+              </div>
+              <!-- <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label>Comments</label>
+              </div> -->
+              <div class="add-comment mt-4">
+                <button>
+                  Add Comment
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- -- Blog single -- -->
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container row">
-        <div class="footer__col col-xl-6">
+        <div class="footer__col col-12 col-md-6">
           <h3>Contact information</h3>
           <p>
             <b>Address </b> : #135 block, Barnard St. Brooklyn, London 10036, UK
@@ -96,7 +598,7 @@
           ><a href="#"><i class="fab fa-dribbble"></i></a
           ><a href="#"><i class="fab fa-google"></i></a>
         </div>
-        <div class="footer__col col-xl-2">
+        <div class="footer__col col-6 col-sm-4 col-md-2">
           <h3>Company</h3>
           <ul>
             <li><a href="#">About us </a></li>
@@ -105,7 +607,7 @@
             <li><a href="#">Pricing</a></li>
           </ul>
         </div>
-        <div class="footer__col col-xl-2">
+        <div class="footer__col col-6 col-sm-4 col-md-2">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Contact Us </a></li>
@@ -114,7 +616,7 @@
             <li><a href="#">Site Feedack </a></li>
           </ul>
         </div>
-        <div class="footer__col col-xl-2">
+        <div class="footer__col col-6 col-sm-4 col-md-2">
           <h3>Support</h3>
           <ul>
             <li><a href="#">All Dogs </a></li>
@@ -125,14 +627,85 @@
         </div>
       </div>
       <div class="footer__copyright">
-        <p>© 2020 Pooch Care. All Rights Reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+        <p>
+          © 2020 Pooch Care. All Rights Reserved. Design by
+          <a href="https://w3layouts.com/">W3Layouts</a>
+        </p>
       </div>
     </footer>
+
+    <!-- Back to top btn -->
+    <section>
+      <button
+        onclick="backToTopFunction()"
+        id="backToTopBtn"
+        class="back-to-top-btn"
+      >
+        ⤴
+      </button>
+    </section>
+    <!-- Petcare Modal -->
+    <div
+      class="modal fade"
+      id="petCare"
+      tabindex="-1"
+      aria-labelledby="petCareLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <a type="button" class="petCare--close" data-bs-dismiss="modal"
+              ><i class="fa fa-times"></i
+            ></a>
+            <iframe
+              src="https://player.vimeo.com/video/101587706?h=187bfc0989"
+              height="375"
+              max-width="100vw"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- BOOSTRAP JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery 3.6.0 -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(".myCarousel").slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+      });
+    </script>
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- BOOSTRAP JS-->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script> -->
   </body>
 </html>

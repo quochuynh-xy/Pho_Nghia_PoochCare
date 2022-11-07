@@ -740,6 +740,9 @@ body {
     .container {
       width: 100%;
     }
+    .choose .row .col-diff .row .content-text{
+      text-align: center;
+    }
   }
   @media screen and (max-width: 576px) {
     .about .container{     

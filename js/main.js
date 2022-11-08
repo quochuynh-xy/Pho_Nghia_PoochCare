@@ -39,4 +39,11 @@ function changeNavbarSize () {
     headerSize.style.padding = "16px 0 15px 0"
     headerSize.style.boxShadow = "none"
   }
+}// navbar icon toggle fixed
+function addToggleClass() {
+  let a = document.getElementById("showAndHide");
+  // let a = document.getElementsByClassName("navbar-toggler");
+  // console.log(a);
+  a.classList.add("collapsed")
 }
+document.onload = addToggleClass()

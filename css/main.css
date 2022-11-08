@@ -308,7 +308,7 @@ body {
 /* Header */
 #switchTheme {
   position: absolute;
-  right: 5vw;
+  right: -1vw;
   top: 15px;
 }
 .navbar .navbar-toggler {
@@ -321,7 +321,7 @@ body {
 }
 .navbar>.container-fluid {
   justify-content: center;
-  padding: 0 10vw;
+  padding: 0 2vw;
 }
 .navbar .nav-link:hover:after {
   display: none;

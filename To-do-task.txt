@@ -1,2 +1,2 @@
-Pho: home - services - gallery - header + footer
-Nghia: blog post - blog single - About
+Pho: home - services - gallery - landingpage - header, responsive header
+Nghia: blog post - blog single - About, responsive footer

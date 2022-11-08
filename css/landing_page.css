@@ -21,25 +21,27 @@
   border-radius: 0 !important;
   transform: scale(115%);
 }
-.team .main__member h4 {
+.team .main__member h4 a {
   transition: 0.3s;
-}
-.team .main__member:hover h4 {
-  color: #189a46;
-}
-.team figcaption {
-  margin-top: 16px;
-}
-.team h4, .team p {
-  margin: 0;
-}
-.team h4 {
+  color: #000c04;
+  text-decoration: none;
   font-size: 22px;
   line-height: 26px;
   color: #000c04;
   font-weight: 600;
 }
-.team figcaption a {
+.team .main__member:hover h4 a {
+  color: #189a46;
+}
+.team figcaption {
+  margin-top: 16px;
+}
+.team h4,
+.team p {
+  margin: 0;
+}
+
+.team figcaption .personal-social {
   display: inline-block;
   margin-top: 16px;
   width: 30px;
@@ -53,14 +55,14 @@
   font-size: 12px;
   transition-duration: 0.5s;
 }
-.team figcaption a:hover {
+.team figcaption .personal-social:hover {
   background-color: #189a46;
   color: #fff;
 }
 .theme-dark .team {
   background-color: #222222;
 }
-.theme-dark .team h4,
+.theme-dark .team h4 a,
 .theme-dark .team p {
   color: #ddd;
 }
@@ -146,7 +148,13 @@
 }
 .theme-dark .contact__main .right-collum a,
 .theme-dark .contact__main .right-collum p {
-color: #777;
+  color: #777;
+}
+.map {
+  height: 400px;
+}
+.theme-dark .map {
+  background-color: #151515;
 }
 /* HEADER NAVIGATION SECTION */
 #section__about,
@@ -160,13 +168,11 @@ color: #777;
   position: relative;
   top: -10vh;
 }
-@media screen and (max-width:1200px) {
-  
+@media screen and (max-width: 1200px) {
 }
-@media screen and (max-width:992px) {
-  
+@media screen and (max-width: 992px) {
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .team .team__header {
     margin-bottom: 2rem;
   }
@@ -174,8 +180,8 @@ color: #777;
     margin-bottom: 1rem;
   }
 }
-@media screen and (max-width:576px) {
-  .contact .container{
+@media screen and (max-width: 576px) {
+  .contact .container {
     padding: 0;
   }
   .contact__main.row {
@@ -183,7 +189,7 @@ color: #777;
     /* display: block; */
     margin: 0 auto;
   }
-  .contact__main .left-collum{
+  .contact__main .left-collum {
     width: 100%;
   }
   .contact__main .right-collum {

@@ -96,14 +96,26 @@
                   Sections<i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#section__team">Team</a></li>
-                  <li><a class="dropdown-item" href="#section__stats">Stats</a></li>
-                  <li><a class="dropdown-item" href="#section__video">Video</a></li>
-                  <li><a class="dropdown-item" href="#section__testimoni">Testimonials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#section__team">Team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#section__stats">Stats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#section__video">Video</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#section__testimoni"
+                      >Testimonials</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#section__contact">Contact</a>
+                <a class="nav-link text-center" href="#section__contact"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -240,8 +252,8 @@
               <footer class="item__footer"><a href="">Read More</a></footer>
             </div>
           </div>
-        <!-- </div> -->
-        <!-- <div class="row text-start"> -->
+          <!-- </div> -->
+          <!-- <div class="row text-start"> -->
           <div class="col-sm-6 col-xl-4">
             <div class="services-item">
               <header class="item__header">
@@ -333,9 +345,14 @@
       </header>
       <main class="team__main row container">
         <div class="col-6 col-lg-3 px-3">
-          <div class="main__member ">
+          <div class="main__member">
             <figure>
-              <a href="#"><img class="img-fluid rounded-3" src="./img/team1.jpg" alt="Our team member"></a>
+              <a href="#"
+                ><img
+                  class="img-fluid rounded-3"
+                  src="./img/team1.jpg"
+                  alt="Our team member"
+              /></a>
             </figure>
             <figcaption class="text-center">
               <h4>Micheal Wagou</h4>
@@ -347,9 +364,14 @@
           </div>
         </div>
         <div class="col-6 col-lg-3 px-3">
-          <div class="main__member ">
+          <div class="main__member">
             <figure>
-              <a href="#"><img class="img-fluid rounded-3" src="./img/team2.jpg" alt="Our team member"></a>
+              <a href="#"
+                ><img
+                  class="img-fluid rounded-3"
+                  src="./img/team2.jpg"
+                  alt="Our team member"
+              /></a>
             </figure>
             <figcaption class="text-center">
               <h4>Alex Mitchell</h4>
@@ -361,9 +383,14 @@
           </div>
         </div>
         <div class="col-6 col-lg-3 px-3">
-          <div class="main__member ">
+          <div class="main__member">
             <figure>
-              <a href="#"><img class="img-fluid rounded-3" src="./img/team3.jpg" alt="Our team member"></a>
+              <a href="#"
+                ><img
+                  class="img-fluid rounded-3"
+                  src="./img/team3.jpg"
+                  alt="Our team member"
+              /></a>
             </figure>
             <figcaption class="text-center">
               <h4>Scott Colon</h4>
@@ -375,9 +402,14 @@
           </div>
         </div>
         <div class="col-6 col-lg-3 px-3">
-          <div class="main__member ">
+          <div class="main__member">
             <figure>
-              <a href="#"><img class="img-fluid rounded-3" src="./img/team4.jpg" alt="Our team member"></a>
+              <a href="#"
+                ><img
+                  class="img-fluid rounded-3"
+                  src="./img/team4.jpg"
+                  alt="Our team member"
+              /></a>
             </figure>
             <figcaption class="text-center">
               <h4>John Harris</h4>
@@ -395,19 +427,19 @@
     <section class="number">
       <div class="container row text-center">
         <div class="number__item col-6 col-lg-3">
-          <p>730</p>
+          <p class="counter">730</p>
           <h4>Happy Clients</h4>
         </div>
         <div class="number__item col-6 col-lg-3">
-          <p>80</p>
+          <p class="counter">80</p>
           <h4>Professionals</h4>
         </div>
         <div class="number__item col-6 mt-sm-5 mt-lg-0 col-lg-3">
-          <p>812</p>
+          <p class="counter">812</p>
           <h4>Adopted Pets</h4>
         </div>
         <div class="number__item col-6 mt-sm-5 mt-lg-0 col-lg-3">
-          <p>90</p>
+          <p class="counter">90</p>
           <h4>Awards</h4>
         </div>
       </div>
@@ -1087,6 +1119,18 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <!-- Waypoint for count up -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Count up -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
     <!-- Slick JS -->
     <script
       type="text/javascript"
@@ -1095,7 +1139,7 @@
     <script type="text/javascript">
       $(".myCarousel").slick({
         dots: true,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 3500,
         infinite: true,
         speed: 500,

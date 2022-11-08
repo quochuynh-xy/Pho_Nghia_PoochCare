@@ -1,3 +1,13 @@
 Bài sử dụng bootstrap v5.2.2
 CSS trong main.CSS là dùng chung
 file main.css dùng để ghi những class dùng chung cho nhiều trang.
+
+// Nghia:
+- Bỏ những đoạn script không dùng (mở dev-tool lên , lăn lên lăn xuống, nếu hiện cảnh báo đỏ thì tìm coi dư script nào)
+trang (about)
+- Chèn nút back to top vào trang blog_post
+- Link các trang lại với nhau. Tất cả các trang khi bấm vào logo đều phải về trang index.html
++ Độ cao phần 1 blog post chưa khớp lắm với trang mẫu (cả trên và gần sát footer)
++ blog-single khoảng cách từ tiêu đề đến hình phía dưới chưa đúng, sai font-weight phần chữ in nghiêng trong nội dung
+Hình ở chỗ comment to quá, chữ reply hover vào chưa có hiệu ứng, các ô ở form điền vào khi kích hoạt không ra đúng border hay outline
+màu xanh

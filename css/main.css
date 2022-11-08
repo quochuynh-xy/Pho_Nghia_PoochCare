@@ -333,4 +333,16 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  #switchTheme {
+    top: 5px;
+  }
+  .btn-white,
+  .btn-trans {
+    padding: 10px 30px;
+    margin-top: 0.5rem;
+  }
 }

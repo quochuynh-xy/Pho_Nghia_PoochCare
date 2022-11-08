@@ -728,6 +728,7 @@ body {
   /* Carousel */
   .myCarousel .item-details .container .text {
     margin: 0 auto;
+    margin-top: 40px;
   }
   .myCarousel .item-details h5 {
     font-size: 50px;
@@ -780,6 +781,15 @@ body {
   }
   .myCarousel .item-details {
     height: 60vh;
+  }
+  .myCarousel .item-details h5 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .btn-white,
+  .btn-trans {
+    padding: 10px 30px;
+    margin-top: 1rem;
   }
   .about .container {
     max-width: 90%;

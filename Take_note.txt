@@ -11,3 +11,6 @@ trang (about)
 + blog-single khoảng cách từ tiêu đề đến hình phía dưới chưa đúng, sai font-weight phần chữ in nghiêng trong nội dung
 Hình ở chỗ comment to quá, chữ reply hover vào chưa có hiệu ứng, các ô ở form điền vào khi kích hoạt không ra đúng border hay outline
 màu xanh
+//Pho
+- Chưa có hiệu ứng khi rê chuột vào tiêu đề từng service ở theme dark
+- Lỗi phần team ở landingpage sai thẻ h4

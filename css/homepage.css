@@ -275,7 +275,8 @@ body {
   line-height: 25px;
   text-transform: capitalize;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   opacity: 0.8;
   font-weight: 400;
 }
@@ -397,6 +398,7 @@ body {
 }
 .petcare .container {
   max-width: 950px;
+  padding: 0;
 }
 .petcare .container p {
   font-size: 1.2rem;
@@ -539,8 +541,8 @@ body {
 }
 .feedback .carousel-indicators {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 24px;
+  padding-top: 68px;
+  padding-bottom: 32px;
   margin-bottom: 0;
 }
 .feedback .carousel-indicators [data-bs-target] {
@@ -556,6 +558,9 @@ body {
 .subs {
   padding: 6rem 0;
 }
+.subs_header {
+  margin-bottom: 48px;
+}
 .subs_header p {
   font-size: 1.2rem;
   line-height: 28px;
@@ -567,6 +572,7 @@ body {
 .subs__main .btn--green {
   margin: 0;
   line-height: 28px;
+  padding: 15px 45px;
 }
 .subs__main .form-control {
   font-size: 16px;
@@ -575,7 +581,7 @@ body {
   padding: 0px 20px;
   flex-basis: 70%;
   background: #fff;
-  padding: 12px 20px;
+  padding: 18px 20px;
   border: 1px solid #ced4da;
   transition: 0.3s;
 }
@@ -611,6 +617,9 @@ body {
 }
 .theme-dark .services .item__header a {
   color: #ddd;
+}
+.theme-dark .services .item__header a:hover {
+  color: #189a46;
 }
 .theme-dark .services .services-item p {
   color: #afafaf;

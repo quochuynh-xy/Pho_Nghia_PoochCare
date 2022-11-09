@@ -43,7 +43,7 @@ body {
   align-items: center;
   padding: 16px 0 15px 0;
   background-color: #fff;
-  position: fixed;
+  /* position: fixed; */
   top: 40px;
   z-index: 10;
   width: 100%;
@@ -412,7 +412,8 @@ body {
   text-align: left;
   display: inline-block;
   color: #000c04;
-  margin-right: 520px;
+  /* margin-right: 520px; */
+  /* margin-left: 0; */
   margin-top: 20px;
   font-size: 17px;
   text-decoration: none;
@@ -678,22 +679,45 @@ body {
     font-size: 35px;
     line-height: 40px;
   }
+  .about .container{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .about .content .row .content-left h3{
+    font-size: 35px;
+  }
+  .about .content .row .content-right a{
+    text-align: left;
+    display: table-caption;
+    width: 90px;
+  }
 
+  .choose .container{
+    max-width: 960px;
+    width: 100%;
+  }
   .choose .row .col .col-left{
     text-align: right;
   }
   .choose .row .col-left img{
     margin-top: 15px;
   }
-
-  .about .content .row .content-right a{
-    width: 90px;
+  .choose .row .col .col-left h3{
+    font-size: 35px;
+    line-height: 40px;
   }
 
-
+  .ourteam .team .container{
+    max-width: 960px;
+    width: 100%;
+  }
+  .ourteam .team .container .title .hny-title{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  
   }
   @media screen and (max-width: 992px) {
-  /* Header */
   #switchTheme {
     position: absolute;
     right: 5vw;
@@ -718,104 +742,121 @@ body {
   .container {
     width: 100%;
   }
+  .about .container{
+    max-width: 720px;
+  }
   .about .content .row .content-right{
-    padding-left: 24px;
+    padding: 0 15px 0 24px;
   }
 
-  .history .history-child .container .content{
-    margin-left: 50px;
+  .history .history-child .container{
+    max-width: 720px;
+    width: 100%;
   }
 
+  .choose .container{
+    max-width: 720px;
+    width: 100%;
+  }
   .choose .row .col .col-left{
     text-align: left;
   }
-  .choose .row .col-diff{
-    padding: 0;
-    padding-top: 20px;
+  .choose .row .col{
+    padding: 0 15px 0 15px;
+    max-width: 720px;
+    width: 100%;
+  }
+  .choose .row .col .col-right{
+    margin-top: 50px;
   }
 
-
+  .ourteam .team .container{
+    max-width: 720px;
+    width: 100%;
   }
+  .ourteam .team .container .row .column .card{
+    border: 1px solid none;
+  }
+  }
+
   @media screen and (max-width: 768px) {
-    .container {
+    .about .container{
+      max-width: 540px;
       width: 100%;
-    }
-    .choose .row .col-diff .row .content-text{
-      text-align: center;
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .about .container{     
-      width: 100%;
-      padding: 0 15px 0 15px;
-    }
-    .about .content .row .content-left{
-      padding-left: 15px;
-      width: 100%;
+      padding: 0 15px;
     }
     .about .content .row .content-left h3{
-      font-size: 32px;
+      line-height: 40px;
     }
-    .about .content .row .content-left h4{
-      font-size: 20px;
-    }
+    .about .content .row .content-left,
     .about .content .row .content-right{
-      padding-left: 15px;
-    }
-    .about .content .row .content-right p{
-      font-size: 15px;     
-    }
-    .about .content .row .content-right a{
-      /* display: initial; */
-      width: 20%;
-      min-width: 90px;
+      padding: 0;
     }
 
-    .history .history-child .container .row .col-right h4{
-      line-height: 32px;
-    }
-    .history .history-child .container .row .col-right h3{
-      font-size: 32px;
-    }
-    .history .content .row .col-right .history-grids{
+    .history .history-child .container{
+      max-width: 540px;
       width: 100%;
+      padding: 0 15px;
     }
     .history .content .row .col-right .history-grids .history-info p{
+      line-height: 28px;
       font-size: 17px;
     }
 
-    .choose .container{
-      padding: 0 15px 0 15px;
-    }
-    .choose .container .row{
-      width: 100%;
-    }
     .choose .row .col{
-      padding: 0 0 0 0;
-    }
-    .choose .row .col .col-left{
-      text-align: left;
-    }
-    .choose .row .col .col-left h3{
-      font-size: 32px;
-    }
-    .choose .row .col .col-left p{
-      line-height: 28px;
-    }
-    .choose .row .col-diff{
-      margin-top: 50px;
+      max-width: 540px;
+      width: 100%;
+      padding: 0 15px;
     }
     .choose .row .col-diff .row .content-text{
       text-align: center;
     }
 
     .ourteam .team .container{
-      padding: 0 0 0 0px;
+      max-width: 540px;
+      width: 100%;
+      padding: 0 15px;
+    }   
+  }
+
+  @media screen and (max-width: 576px) {
+    .about .container{     
+      width: 100%;
+      padding: 0 15px 0 15px;
     }
-    .ourteam .team .container .row{
-      margin-right: 0;
+    .about .content .row .content-left h3{
+      font-size: 27px;
+      line-height: 32px;
+    }
+    .about .content .row .content-left h4{
+      font-size: 20px;
     }
 
+    .history .history-child .container .row .col-right h4{
+      font-size: 20px;
+    }
+    .history .history-child .container .row .col-right h3{
+      font-size: 27px;
+    }
+
+    .choose .container{
+      padding: 0;
+    }
+    .choose .row .col{
+      padding: 0;
+    }
+    .choose .row .col .col-left h3{
+      font-size: 27px;
+      line-height: 32px;
+    }
+
+    .ourteam .team .container .title .hny-title{
+      font-size: 27px;
+      line-height: 32px;
+    }
+    .ourteam .team .container{
+      padding: 0 0 0 0px;
+    }
   }
   
 

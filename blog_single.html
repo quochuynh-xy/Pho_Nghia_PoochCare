@@ -50,9 +50,10 @@
     <header class="header" id="mainHeader">
       <nav class="container navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Pooch Care</a>
+          <a class="navbar-brand" href="./index.html">Pooch Care</a>
           <button
             class="navbar-toggler"
+            id="showAndHide"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -74,17 +75,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="./about.html">About</a>
+                <a class="nav-link text-center " href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="./services.html"
-                  >Services</a
-                >
+                <a class="nav-link text-center" href="./services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="./gallery.html"
-                  >Gallery</a
-                >
+                <a class="nav-link text-center" href="./gallery.html">Gallery</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -97,29 +94,13 @@
                   Blog <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./blog_post.html"
-                      >Blog Posts</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./blog_single.html"
-                      >Blog single</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./landing_page.html"
-                      >Landing Page</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="./blog_post.html">Blog Posts</a></li>
+                  <li><a class="dropdown-item" href="./blog_single.html">Blog single</a></li>
+                  <li><a class="dropdown-item" href="./landing_page.html">Landing Page</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link text-center"
-                  href="./landing_page.html#"
-                  >Contact</a
-                >
+                <a class="nav-link text-center" href="./landing_page.html#section__contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -208,22 +189,26 @@
             </div>
   
             <div class="content-text">
-              <p class="mt-3 col-12">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, hic reprehenderit eum cupiditate deleniti asperiores illum ad tenetur aliquam culpa fugit odit consequatur. Rerum illo accusantium aliquid quae adipisci fugiat sapiente delectus unde architecto. Tempore saepe maxime illo laborum obcaecati.
-              </p>   
-              <div class="row">
-                <div class="col-12 col-sm-12 col-md-4 col-xl-4">
-                  <img src="./img-nghia/g1.jpg" alt="">
+              <div class="grid">
+                <div class="item">
+                  <p class="mt-3 col-12">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, hic reprehenderit eum cupiditate deleniti asperiores illum ad tenetur aliquam culpa fugit odit consequatur. Rerum illo accusantium aliquid quae adipisci fugiat sapiente delectus unde architecto. Tempore saepe maxime illo laborum obcaecati.
+                  </p>   
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-xl-4 p-0">
+                      <img src="./img-nghia/g1.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-xl-8 ">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis repellendus velit nam fuga asperiores nemo commodi enim corrupti est tenetur placeat veritatis, dolores laborum illo, ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga expedita earum veritatis optio dolorum deserunt eos. Non in temporibus similique quibusdam nihil qui, consequatur, debitis ipsa aperiam dicta possimus itaque unde hic, voluptatum expedita.
+                      </p>
+                    </div>
+                  </div>   
+                  <p class="mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae ullam expedita. Ut explicabo minima fugit ipsum sapiente fuga et facere est autem iste ducimus totam accusamus quasi distinctio, excepturi voluptatum harum porro nostrum nemo iusto culpa expedita cupiditate omnis. Animi iusto officiis at voluptates vel laboriosam eum error voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>    
                 </div>
-                <div class="col-12 col-sm-12 col-md-8 col-xl-8">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis repellendus velit nam fuga asperiores nemo commodi enim corrupti est tenetur placeat veritatis, dolores laborum illo, ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga expedita earum veritatis optio dolorum deserunt eos. Non in temporibus similique quibusdam nihil qui, consequatur, debitis ipsa aperiam dicta possimus itaque unde hic, voluptatum expedita.
-                  </p>
-                </div>
-              </div>   
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae ullam expedita. Ut explicabo minima fugit ipsum sapiente fuga et facere est autem iste ducimus totam accusamus quasi distinctio, excepturi voluptatum harum porro nostrum nemo iusto culpa expedita cupiditate omnis. Animi iusto officiis at voluptates vel laboriosam eum error voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>    
+              </div>
             </div>
             
           
@@ -232,14 +217,16 @@
 
       <!-- -- Blog single2-- -->
       <section class="blog-single-2">
-        <div>
+        <div class="text-content">
           <div class="container">
-            <p class="text">
-              <i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos facere dolor repellendus odio. Voluptatum provident quasi necessitatibus laboriosam alias. "
-            </p>
-            <footer class="author">
-              <i class="fa-solid fa-minus"></i> Alexander smith
-            </footer>
+            <div class="text-content-1">
+              <p class="text">
+                <i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos facere dolor repellendus odio. Voluptatum provident quasi necessitatibus laboriosam alias. "
+              </p>
+              <footer class="author">
+                <i class="fa-solid fa-minus"></i> Alexander smith
+              </footer>
+            </div>
           </div>
         </div>
       </section>
@@ -253,9 +240,9 @@
                 <h4>
                   It is a long established fact a reader be distracted.
                 </h4>
-                <p class="italic">
+                <h5>
                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
+                </h5>
                 <p class="sub-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos facere dolor repellendus odio. Voluptatum provident quasi necessitatibus laboriosam alias dicta quis voluptate minus minima dolorum quod, quaerat modi veritatis libero! Culpa facilis enim optio veniam voluptas. Laudantium explicabo optio quam ea deleniti odio totam adipisci illo, enim quos corrupti. Animi labore natus at quas laborum. Soluta, nam molestiae.
                 </p>
@@ -368,10 +355,10 @@
               </h3>
 
               <div class="media row mb-4 mt-5">
-                <div class="img-cirkle col-4 col-sm-2 col-md-2 col-xl-2">
+                <div class="img-cirkle col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1">
                   <img src="./img-nghia/f1.jpg" alt="">
                 </div>
-                <div class="media-body col-8 col-sm-10 col-md-10 col-xl-10">
+                <div class="media-body col-9 col-sm-10  col-md-11 col-lg-11 col-xl-11">
                   <h5 class="mb-0">Alisa larden</h5>
                   <span>
                     18 minutes ago
@@ -381,10 +368,10 @@
                   </p>
                   <a href="#form-child" class="reply">Reply</a>
                   <div class="media row">
-                    <div class="img-cirkle col-4 col-sm-2 col-xl-2">
+                    <div class="img-cirkle img-small col-4 col-sm-2 col-md-1 col-lg-1 col-xl-1">
                       <img src="./img-nghia/f2.jpg" alt="">
                     </div>
-                    <div class="media-body col-8 col-sm-10 col-xl-10">
+                    <div class="media-body col-8 col-sm-10 col-md-11 col-lg-11 col-xl-11">
                       <h5>Maxwell ker</h5>
                   <span>
                     4 hours ago
@@ -399,10 +386,10 @@
               </div>
 
               <div class="media row mt-5">
-                <div class="img-cirkle col-3 col-sm-2 col-xl-2">
+                <div class="img-cirkle col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1">
                   <img src="./img-nghia/f3.jpg" alt="">
                  </div>
-               <div class="media-body col-9 col-sm-10 col-xl-10">
+               <div class="media-body col-9 col-sm-10 col-md-11 col-lg-11 col-xl-11">
                 <h5>Tony Elisa</h5>
                 <span>
                   16 hours ago
@@ -415,10 +402,10 @@
               </div>
 
               <div class="media row mt-5">
-                <div class="img-cirkle col-3 col-sm-2 col-xl-2">
+                <div class="img-cirkle col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1">
                   <img src="./img-nghia/f4.jpg" alt="">
                  </div>
-               <div class="media-body col-9 col-sm-10 col-xl-10">
+               <div class="media-body col-9 col-sm-10 col-md-11 col-lg-11 col-xl-11">
                 <h5>Elizabeth mark</h5>
                 <span>
                   yesterday
@@ -538,45 +525,50 @@
       <section class="blog-single-6">
         <div class="form">
           <div class="container">
-            <h3 class="mb-4">Leave a reply</h3>
-
-            <form class="form-child" action="">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-xl-6 col-left col-hover">
-                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Your Name*">
+            <div class="form-main">
+              <div class="form-content">
+                <h3 class="mb-4">Leave a reply</h3>
+  
+              <form class="form-child" action="">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-xl-6 col-left col-hover">
+                    <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Your Name*">
+                  </div>
+  
+                  <div class="col-12 col-sm-6 col-xl-6 col-right col-hover">
+                    <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Email Address*">
+                  </div>
+  
+                  <div class="col-12 col-sm-6 col-xl-6 col-left col-hover">
+                    <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Subject">
+                  </div>
+  
+                  <div class="col-12 col-sm-6 col-xl-6 col-right col-hover">
+                    <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Phone">
+                  </div>
+  
                 </div>
-
-                <div class="col-12 col-sm-6 col-xl-6 col-right col-hover">
-                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Email Address*">
+                <div class="col-12 col-hover col-contact">
+                  <input type="text" class="contact mb-0" style="width: 100%;" placeholder="Your Message*">
+                  <!-- <label for="contact"></label> -->
                 </div>
-
-                <div class="col-12 col-sm-6 col-xl-6 col-left col-hover">
-                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Subject">
+                <!-- <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label>Comments</label>
+                </div> -->
+                <div class="add-comment mt-4">
+                  <button>
+                    Add Comment
+                  </button>
                 </div>
-
-                <div class="col-12 col-sm-6 col-xl-6 col-right col-hover">
-                  <input type="text" class="form-style mb-4" style="width: 100%;" placeholder="Phone">
-                </div>
-
+              </form>
               </div>
-              <div class="col-12 col-hover">
-                <input type="text" class="contact mb-0" style="width: 100%;" placeholder="Your Message*">
-                <!-- <label for="contact"></label> -->
-              </div>
-              <!-- <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label>Comments</label>
-              </div> -->
-              <div class="add-comment mt-4">
-                <button>
-                  Add Comment
-                </button>
-              </div>
-            </form>
+            </div>
 
           </div>
         </div>
       </section>
+
     </section>
     <!-- -- Blog single -- -->
 
@@ -678,26 +670,10 @@
     ></script>
     <!-- Jquery 3.6.0 -->
 
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+    
     <!-- Slick JS -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script type="text/javascript">
-      $(".myCarousel").slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3500,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: "linear",
-      });
-    </script>
+    
+    
     <!-- Main JS -->
     <script src="./js/main.js"></script>
 

@@ -608,26 +608,7 @@
     }
 
     @media screen and (max-width: 992px) {
-    /* #switchTheme {
-      position: absolute;
-      right: 5vw;
-      top: 15px;
-    }
-    .navbar .navbar-toggler {
-      margin-left: auto;
-      margin-right: 20px;
-    }
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-      transform: translateX(0);
-      text-align: center;
-    }
-    .navbar>.container-fluid {
-      justify-content: center;
-      padding: 0 10vw;
-    }
-    .navbar .nav-link:hover:after {
-      display: none;
-    } */
+    
 
     .blog-single-1 .container-fluid{
       max-width: 720px;

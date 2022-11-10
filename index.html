@@ -115,11 +115,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link text-center"
-                  href="#url"
-                  >Contact</a
-                >
+                <a class="nav-link text-center" href="#url">Contact</a>
               </li>
             </ul>
           </div>
@@ -984,6 +980,11 @@
         speed: 500,
         fade: true,
         cssEase: "linear",
+      });
+    </script>
+    <script>
+      $("#petCare").on("hidden.bs.modal", function (e) {
+        $("#petCare iframe").attr("src", $("#petCare iframe").attr("src"));
       });
     </script>
     <!-- Main JS -->

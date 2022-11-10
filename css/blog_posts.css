@@ -181,6 +181,35 @@ color: #189a46;
   font-size: 20px;
 }
 
+/* --------theme-dark---------- */
+.theme-dark .blogposts{
+  background-color: #222222;
+}
+.theme-dark .blogposts .heading h3{
+  color: #fff;
+}
+.theme-dark .blogposts .container .row .card{
+  border: none;
+}
+.theme-dark .blogposts .container .row .card .card-body{
+  background-color: #111111;
+}
+.theme-dark .blogposts .container .row .card .card-body a{
+  color: #DDDDDD;
+}
+.theme-dark .blogposts .container .row .card .card-body a:hover{
+  color: #189a46;
+}
+.theme-dark .blogposts .container .row .card .card-body .author a:hover{
+  color: #f53626;
+}
+.theme-dark .blogposts .container .row .card .card-header{
+  border: none;
+}
+.theme-dark .pagination ul li a{
+  color: #DCDCDC;
+}
+
   /* -------------responsive------------- */
   @media screen and (max-width: 1200px) {
     .blogposts .heading h3{

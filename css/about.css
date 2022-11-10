@@ -600,6 +600,10 @@
     .theme-dark .ourteam .team .container .row .column .card{
       border: none;
     }
+    .theme-dark .ourteam .team .container .row .column .card .card-body{
+      /* background-color: #222222; */
+      border: none;
+    }
   }
   
 

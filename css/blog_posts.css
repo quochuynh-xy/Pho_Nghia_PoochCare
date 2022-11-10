@@ -190,12 +190,7 @@ color: #189a46;
     
   }
   @media screen and (max-width: 992px) {
-  /* Header */
-  /* #switchTheme {
-    position: absolute;
-    right: 10vw;
-    top: 1.5vh;
-  } */
+  
 
   .blogposts .container .row .col-diff {
     margin-top: 60px;

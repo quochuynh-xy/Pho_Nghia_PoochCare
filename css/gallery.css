@@ -1,5 +1,5 @@
 .gallery .container {
-  max-width: 80%;
+  width: 80%;
 }
 .pageTitle {
     background-image: url(../img/banner4.jpg);

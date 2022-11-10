@@ -1,0 +1,225 @@
+
+  /* ----------myCarousel-------------------- */
+/* ------------------myCarousel----------------------------- */
+.myCarousel {
+  background-image: url(../img/banner4.jpg);
+  margin: 40px auto;
+  height: 240px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 55px;
+}
+
+.myCarousel::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #0c0c0c;
+    opacity: .6;
+}
+
+.myCarousel .myCarousel_content {
+  text-align: center;
+  padding-top: 70px;
+  z-index: 6;
+  position: relative;
+}
+
+.myCarousel .myCarousel_content h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.myCarousel .myCarousel_content ul {
+}
+
+.myCarousel .myCarousel_content li {
+  display: inline-block;
+}
+
+.myCarousel .myCarousel_content a {
+  color: #189a46;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.myCarousel .myCarousel_content i {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.myCarousel .myCarousel_content span {
+  color: #fff;
+  font-size: 19px;
+}
+
+/* ------------------Blog Posts--------------------- */
+.blogposts {
+  background-color: #F9F7FE;
+}
+
+.blogposts .heading{
+  padding-top: 100px;
+}
+
+.blogposts .heading h6{
+  font-size: 18px;
+  color: #f53626;
+  font-weight: 400;
+}
+
+.blogposts .heading h3{
+  font-size: 40px;
+  color: #000c04;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.blogposts .container .row {
+  padding-bottom: 50px;
+}
+
+
+.blogposts .container .row .card  {
+  border: 1px solid transparent;
+  margin-left: 5px;
+}
+
+.blogposts .container .row .card-bottom .card  {
+  margin-top: 60px;
+}
+
+.blogposts .container .row .card:hover  {
+  transform: translateY(-2%);
+  transition: all 0.4s;
+  box-shadow: 0 0 60px 0px rgb(0 0 0 / 10%);
+}
+
+
+.blogposts .container .row .card .card-header {
+  padding: 0;
+}
+
+.blogposts .container .row .card a {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.blogposts .container .row .card img {
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.blogposts .container .row .card .card-body a {
+  font-size: 26px;
+  color: #000c04;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.blogposts .container .row .card .card-body a:hover {
+  color: #189a46;
+}
+
+.blogposts .container .row .card .card-body  {
+  font-size: 19.2px;
+  color: #696969;
+}
+
+.blogposts .container .row .card .card-body .author a{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.blogposts .container .row .card .card-body .author a:hover{
+  color: #f53626;
+}
+
+
+.blogposts .container .row .card .card-body .author span{
+  font-size: 16px;
+  color: #999999;
+}
+
+.blogposts .container .row .card .card-body ul {
+  text-align: left;
+  padding: 0;
+  font-size: 15px;
+  color: #888;
+}
+
+.blogposts .container .row .card .card-body ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.pagination{
+}
+
+.pagination ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pagination ul li a:hover{
+color: #189a46;
+}
+
+.pagination ul li a{
+  text-decoration: none;
+  color: #000c04;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+  /* -------------responsive------------- */
+  @media screen and (max-width: 1200px) {
+    .blogposts .heading h3{
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 0;
+    }
+    
+  }
+  @media screen and (max-width: 992px) {
+  /* Header */
+  /* #switchTheme {
+    position: absolute;
+    right: 10vw;
+    top: 1.5vh;
+  } */
+
+  .blogposts .container .row .col-diff {
+    margin-top: 60px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+    .container{
+      max-width: 540px;
+      width: 100%;
+    }
+    .blogposts .heading h3{
+      line-height: 40px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .container{
+      width: 100%;
+      max-width: 500px;
+    }
+    .blogposts .heading h3{
+      font-size: 27px;
+      line-height: 32px;
+    }
+  }
+
+  
+  

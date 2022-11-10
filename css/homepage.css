@@ -594,6 +594,9 @@ body {
 }
 /* Dark Theme */
 /* About */
+.theme-dark .myCarousel .slick-list.draggable {
+  background-color: #151515;
+}
 .theme-dark .about {
   background-color: #151515;
 }

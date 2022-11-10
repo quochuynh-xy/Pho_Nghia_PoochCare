@@ -24,6 +24,9 @@ body {
   height: calc(100vh - 40px);
   position: relative;
 }
+.myCarousel .slick-list.draggable {
+  height: 100vh;
+}
 .myCarousel .item-details:active {
   cursor: grab;
 }
@@ -69,9 +72,6 @@ body {
 }
 .slick-dots {
   bottom: 50px;
-}
-.myCarousel .slick-list.draggable {
-  height: 100vh;
 }
 .myCarousel .slick-dots li {
   background-color: #fff;
@@ -774,12 +774,16 @@ body {
     margin-top: 1rem;
     text-align: center;
   }
+  .feedback .carousel-indicators {
+    display: none;
+  }
   .contact__main {
     display: block;
   }
   .contact__main .left-collum {
     margin: auto;
   }
+
 }
 @media screen and (max-width: 576px) {
   .title-L {
@@ -792,6 +796,9 @@ body {
     top: 40px;
   }
   .myCarousel .item-details {
+    height: 60vh;
+  }
+  .myCarousel .slick-list.draggable {
     height: 60vh;
   }
   .myCarousel .item-details h5 {

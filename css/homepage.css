@@ -871,6 +871,12 @@ body {
   .subs .container.row {
     justify-content: space-around;
   }
+  .subs__main .row {
+    padding: 0;
+  }
+  .subs .subs__main .row .col-sm-12 {
+    padding: 0;
+  }
   .subs__main div:nth-child(2) {
     margin-top: 0;
   }

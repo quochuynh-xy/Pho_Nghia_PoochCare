@@ -518,8 +518,10 @@
     font-size: 18px;
 }
 .blog-single-6 .form .container .form-child .add-comment button:hover{
-  background-color: #696969;
+  background-color: #116e32;
   transition: all 1s;
+  color: #fff;
+  border-color: #116e32;
 }
   /* ---------------end blog-single--------------------------------- */
   

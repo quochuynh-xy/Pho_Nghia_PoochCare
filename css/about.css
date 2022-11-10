@@ -4,7 +4,7 @@
 
 /* ------------------myCarousel----------------------------- */
 .myCarousel {
-  background-image: url(../img-nghia/banner4.jpg);
+  background-image: url(../img/banner4.jpg);
   margin: 40px auto;
   height: 240px;
   box-sizing: border-box;
@@ -132,7 +132,7 @@
 
 /* ----------------Our History---------------------------------- */
 .history {
-  background-image: url(../img-nghia/banner2.jpg);
+  background-image: url(../img/banner2.jpg);
     background-size: cover;
     background-position: center center;
     height: 562px;

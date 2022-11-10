@@ -328,8 +328,8 @@ body {
 }
 }
 @media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
+  .header .container {
+    width: 90%;
   }
 }
 @media screen and (max-width: 576px) {

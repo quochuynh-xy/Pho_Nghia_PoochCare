@@ -70,6 +70,9 @@ body {
 .slick-dots {
   bottom: 50px;
 }
+.myCarousel .slick-list.draggable {
+  height: 100vh;
+}
 .myCarousel .slick-dots li {
   background-color: #fff;
   border-radius: 10px;

@@ -340,4 +340,9 @@ body {
   #switchTheme {
     top: 5px;
   }
+
+  .footer .footer__col{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 }

@@ -757,9 +757,9 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .container {
+  /* .container {
     max-width: 80%;
-  }
+  } */
   .header {
     top: 0;
   }
@@ -789,9 +789,9 @@ body {
   .title-L {
     font-size: 32px;
   }
-  .container {
+  /* .container {
     max-width: 90%;
-  }
+  } */
   .header {
     top: 40px;
   }

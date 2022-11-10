@@ -344,4 +344,11 @@ body {
   #switchTheme {
     top: 5px;
   }
+  .footer .container {
+    width: 100%;
+  }
+  .footer .footer__col{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 }

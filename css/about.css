@@ -597,6 +597,10 @@
     .ourteam .team .container{
       padding: 0 10px 0 10px;
     }
+    .ourteam .team .container .row-diff {
+      width: 100%;
+      margin: 0;
+    }
     .theme-dark .ourteam .team .container .row .column .card{
       border: none;
     }

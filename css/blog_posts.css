@@ -2,7 +2,7 @@
   /* ----------myCarousel-------------------- */
 /* ------------------myCarousel----------------------------- */
 .myCarousel {
-  background-image: url(../img-nghia/banner4.jpg);
+  background-image: url(../img/banner4.jpg);
   margin: 40px auto;
   height: 240px;
   box-sizing: border-box;
@@ -62,8 +62,6 @@
 
 /* ------------------Blog Posts--------------------- */
 .blogposts {
-  /* padding: 0 auto; */
-  /* margin-bottom: 50px; */
   background-color: #F9F7FE;
 }
 
@@ -193,11 +191,11 @@ color: #189a46;
   }
   @media screen and (max-width: 992px) {
   /* Header */
-  #switchTheme {
+  /* #switchTheme {
     position: absolute;
     right: 10vw;
     top: 1.5vh;
-  }
+  } */
 
   .blogposts .container .row .col-diff {
     margin-top: 60px;

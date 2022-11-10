@@ -1,2 +1,20 @@
 Pho: home - services - gallery - landingpage - header, responsive header
 Nghia: blog post - blog single - About, responsive footer
+_________Task list________
+Phô:
+ + Create git repo
+ + Header ( full )
+ + Home page (index.html)
+ + Gallery page (gallery.html)
+ + Services page (services.html)
+ + Landing page (landing_page.html) (làm thêm do thấy gallery có vẻ ngắn)
+ + Merge + fix bug
+
+
+ Nghĩa:
++ About page (about.html)
++ Blog post page (blog_post.html)
++ Blog single page (blog_single.html)
++ Fix footer + responsive footer
++ Merge + fix bug
++ Quay clip sản phẩm.

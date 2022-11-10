@@ -292,6 +292,7 @@ body {
   height: 48px;
   transition-duration: 0.5s;
   opacity: 0.9;
+  z-index: 10;
 }
 .back-to-top-btn:hover {
   transform: translateY(-10px);
@@ -302,6 +303,9 @@ body {
 .title-L {
   font-size: 35px;
   line-height: 40px;
+}
+.dropdown-item:focus::after, .dropdown-item:hover::after {
+  display: none;
 }
 }
 @media screen and (max-width: 992px) {

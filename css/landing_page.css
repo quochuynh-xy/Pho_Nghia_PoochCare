@@ -181,6 +181,9 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .team .main__member h4 a {
+    font-size: 18px;
+  }
   .contact .container {
     padding: 0;
   }

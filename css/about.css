@@ -40,6 +40,7 @@
 }
 
 .myCarousel .myCarousel_content ul {
+  padding: 0;
 }
 
 .myCarousel .myCarousel_content li {
@@ -325,6 +326,7 @@
 }
 .ourteam .team .container .row .column .card .hidden{
   overflow: hidden;
+  border-radius: 0;
 }
 .ourteam .team .container .row .column .card{
   border: 1px solid #F3EFFD;
@@ -377,7 +379,7 @@
 /* --------------------------------------- */
 
 /* ---------theme-dark----------------- */
-/* .theme-dark .about{
+.theme-dark .about{
   background-color: #111111;
 }
 .theme-dark .about .content .row .content-left h4{
@@ -402,8 +404,32 @@
   color: #189a46;
 }
 .theme-dark .ourteam{
-  background-color: #111111;
-} */
+  background-color: #222222;
+}
+.theme-dark .ourteam .team .container .row .column .card{
+  border: none;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body{
+  background-color: #222222;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body a{
+  color: #fff;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body a:hover{
+  color: #189a46;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body .social-child a{
+  background-color: #222222;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body .social-child span{
+  color: #189a46;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body .social-child span:hover{
+  color: #fff;
+}
+.theme-dark .ourteam .team .container .row .column .card .card-body p{
+  color: #afafaf;
+}
 
 /* responsive */
 @media screen and (max-width: 1200px) {
@@ -570,6 +596,13 @@
     }
     .ourteam .team .container{
       padding: 0 10px 0 10px;
+    }
+    .theme-dark .ourteam .team .container .row .column .card{
+      border: none;
+    }
+    .theme-dark .ourteam .team .container .row .column .card .card-body{
+      /* background-color: #222222; */
+      border: none;
     }
   }
   

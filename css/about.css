@@ -596,6 +596,9 @@
     .ourteam .team .container{
       padding: 0 10px 0 10px;
     }
+    .theme-dark .ourteam .team .container .row .column .card{
+      border: none;
+    }
   }
   
 

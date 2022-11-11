@@ -1172,5 +1172,10 @@
       });
     </script>
     <script src="./js/main.js"></script>
+    <script>
+      $("#petCare").on("hidden.bs.modal", function (e) {
+        $("#petCare iframe").attr("src", $("#petCare iframe").attr("src"));
+      });
+    </script>
   </body>
 </html>
